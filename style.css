@@ -1,0 +1,103 @@
+body {
+  background-color: #f2ead3;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.banner {
+  overflow: auto;
+}
+
+.banner img {
+  float: right;
+  margin-right: 20px;
+  width: 450px;
+  height: 550px;
+  border-radius: 20px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.stat h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {
+  background-color: #3F2305;
+  color: #f2ead3;
+  width: 200px;
+  height: 50px;
+}
+
+.success:hover {
+  background-color: #a7a08d;
+}
+
+.call {
+  background-color: #f2ead3;
+  box-shadow: 2px 2px 2px #3F2305;
+  border: 2px solid #3F2305;
+  color: #3F2305;
+  width: 200px;
+  height: 50px;
+}
+
+.call:hover {
+  background-color: #a7a08d;
+}
