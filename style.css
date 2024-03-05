@@ -252,6 +252,29 @@ a:hover {
   background-color: #555;
 }
 
+#mobile-only-section {
+  display: none; /* Hide the section by default on larger screens */
+}
+
+@media only screen and (max-width: 768px) {
+
+  #mobile-only-section {
+      display: block; /* Show the section on mobile screens */
+      max-width: 100%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #E2BFB3;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  }
+
+  #mobile-only-section h2 p {
+      color: #333;
+      text-align: center;
+  }
+
+}
+
 
 
 
