@@ -10,11 +10,23 @@
 </head>
 
 <body>
+    <div class="mascot">
+        <img src="./assets/mascot.png" alt="Mascot">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            var mascot = document.querySelector(".mascot");
+            mascot.style.visibility = "visible";
+            mascot.style.animation = "bounce 1s infinite alternate";
+          }, 3000); // 3000 milliseconds (3 seconds) delay
+        });
+      </script>
 
   <header>
     <div class="logo-container">
         <img src="https://png.pngtree.com/png-vector/20230105/ourmid/pngtree-book-icon-vector-image-png-image_6552370.png" alt="Bookshop Logo">
-        <h1>Bookshop</h1>
+        <h1>Bookscape</h1>
     </div>
 </header>
 
