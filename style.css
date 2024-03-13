@@ -59,6 +59,7 @@ section {
 
 h1, h2 {
   color: #333;
+  font-weight: bolder;
 }
 
 p {
@@ -68,6 +69,9 @@ p {
 nav {
   background-color: #E2BFB3;
   padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -75,11 +79,10 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
 }
 
 li {
-  display: inline;
+  margin: 0 10px;
 }
 
 a {
@@ -311,6 +314,24 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
+  ul {
+    flex-direction:column;
+    align-items: center;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  nav {
+    padding: 1em;
+  }
+
+  a {
+    padding: 0.5em;
+    margin: 5px;
+  }
 
   #mobile-only-section {
       display: block; /* Show the section on mobile screens */

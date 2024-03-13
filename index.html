@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <div class="mascot">
         <img src="./assets/mascot.png" alt="Mascot">
     </div>
@@ -46,77 +51,128 @@
     </div>
   </section>
 
-    <section id="featured-books">
-        <h2>Featured Books</h2>
-        <div class="book-container">
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/815oQ6G6HDL._AC_UF1000,1000_QL80_.jpg" height="150px" width="100px" alt="Book 1">
-                <h3>Holly</h3>
-                <p>Author: Stephen King</p>
-                <p>Price: $19.99</p>
+  <section id="featured-books" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Books</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/815oQ6G6HDL._AC_UF1000,1000_QL80_.jpg" class="card-img-top img-fluid" alt="Book 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Holly</h3>
+                        <p class="card-text">Author: Stephen King</p>
+                        <p class="card-text">Price: $19.99</p>
+                    </div>
+                </div>
             </div>
-            <div class="book">
-                <img src="https://m.media-amazon.com/images/I/917iVfhEhxL._AC_UF1000,1000_QL80_.jpg" height="150px" width="100px" alt="Book 2">
-                <h3>Verity</h3>
-                <p>Author: Colleen Hoover</p>
-                <p>Price: $24.99</p>
-            </div>
-            <div class="book">
-              <img src="https://m.media-amazon.com/images/I/71gbZc7fADL._AC_UF1000,1000_QL80_.jpg" height="150px" width="100px" alt="Book 2">
-              <h3>Black Coffee</h3>
-              <p>Author: Agatha Christie</p>
-              <p>Price: $20</p>
-          </div>
-          <div class="book">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1571683410l/50833559.jpg" height="150px" width="100px" alt="Book 1">
-            <h3>Home Before dark</h3>
-            <p>Author: Riley Sager</p>
-            <p>Price: $10.99</p>
-        </div>
-        <div class="book">
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621347398l/57693172.jpg" height="150px" width="100px" alt="Book 2">
-            <h3>A Flicker in The Dark</h3>
-            <p>Author: Stacy Willingham</p>
-            <p>Price: $28.99</p>
-        </div>
-        <div class="book">
-          <img src="https://carturesti.md/img-prod/437263-0.jpeg" height="150px" width="100px" alt="Book 2">
-          <h3>Book Lovers</h3>
-          <p>Author: Emily Henry</p>
-          <p>Price: $20</p>
-      </div>
-        </div>
-    </section>
 
-    <section id="new-arrivals">
-      <h2>New Arrivals</h2>
-      <div class="book-container">
-          <div class="book">
-              <img src="https://m.media-amazon.com/images/I/41NFu8nwdlL.jpg" height="150px" width="100px" alt="New Book 1">
-              <h3>No Exit</h3>
-              <p>Author: Taylor Adams</p>
-              <p>Genre: Horror Thriller</p>
-              <p>Price: $29.99</p>
-              <button>Add to Cart</button>
-          </div>
-          <div class="book">
-            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627673847l/58346977.jpg" height="150px" width="100px" alt="New Book 2">
-            <h3>Reminders Of Him</h3>
-            <p>Author: Colleen Hoover</p>
-            <p>Genre: Romance</p>
-            <p>Price: $30.99</p>
-            <button>Add to Cart</button>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/917iVfhEhxL._AC_UF1000,1000_QL80_.jpg" class="card-img-top img-fluid" alt="Book 2">
+                    <div class="card-body">
+                        <h3 class="card-title"><b>Verity</b></h3>
+                        <p class="card-text">Author: Colleen Hoover</p>
+                        <p class="card-text">Price: $24.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://m.media-amazon.com/images/I/71gbZc7fADL._AC_UF1000,1000_QL80_.jpg" class="card-img-top img-fluid" alt="Book 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Black Coffee</h3>
+                        <p class="card-text">Author: Agatha Christie</p>
+                        <p class="card-text">Price: $20</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1571683410l/50833559.jpg" class="card-img-top img-fluid" alt="Book 4">
+                    <div class="card-body">
+                        <h3 class="card-title">Home Before Dark</h3>
+                        <p class="card-text">Author: Riley Sager</p>
+                        <p class="card-text">Price: $10.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1621347398l/57693172.jpg" class="card-img-top img-fluid" alt="Book 5">
+                    <div class="card-body">
+                        <h3 class="card-title">A Flicker in The Dark</h3>
+                        <p class="card-text">Author: Stacy Willingham</p>
+                        <p class="card-text">Price: $28.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://carturesti.md/img-prod/437263-0.jpeg" class="card-img-top img-fluid" alt="Book 6">
+                    <div class="card-body">
+                        <h3 class="card-title">Book Lovers</h3>
+                        <p class="card-text">Author: Emily Henry</p>
+                        <p class="card-text">Price: $20</p>
+                    </div>
+                </div>
+            </div>
         </div>
-          <div class="book">
-              <img src="https://m.media-amazon.com/images/I/81MBotti0gL._AC_UF1000,1000_QL80_.jpg" height="150px" width="100px" alt="New Book 2">
-              <h3>Misery</h3>
-              <p>Author: Stephen King</p>
-              <p>Genre: Horror</p>
-              <p>Price: $34.99</p>
-              <button>Add to Cart</button>
-          </div>
-      </div>
-  </section>
+    </div>
+</section>
+
+
+
+<section id="new-arrivals" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">New Arrivals</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41NFu8nwdlL.jpg" class="card-img-top img-fluid" alt="New Book 1">
+                    <div class="card-body">
+                        <h3 class="card-title">No Exit</h3>
+                        <p class="card-text">Author: Taylor Adams</p>
+                        <p class="card-text">Genre: Horror Thriller</p>
+                        <p class="card-text">Price: $29.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627673847l/58346977.jpg" class="card-img-top img-fluid" alt="New Book 2">
+                    <div class="card-body">
+                        <h3 class="card-title">Reminders Of Him</h3>
+                        <p class="card-text">Author: Colleen Hoover</p>
+                        <p class="card-text">Genre: Romance</p>
+                        <p class="card-text">Price: $30.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Misery_%281987%29_front_cover%2C_first_edition.jpg" class="card-img-top img-fluid" alt="New Book 3">
+                    <div class="card-body">
+                        <h3 class="card-title">Misery</h3>
+                        <p class="card-text">Author: Stephen King</p>
+                        <p class="card-text">Genre: Horror</p>
+                        <p class="card-text">Price: $34.99</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
   <section id="best-sellers">
     <h2>Best Seller Book Of The Month</h2>
